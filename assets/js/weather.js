@@ -24,7 +24,6 @@ const key = `${CONFIG.weatherKey}`;
 setPosition();
 
 function setPosition(position) {
-  getWeather();
   if (!CONFIG.trackLocation || !navigator.geolocation) {
     if (CONFIG.trackLocation) {
       console.error('Geolocation not available');
